@@ -19,4 +19,22 @@ interface ParserInterface
      * @throws ParserExceptionInterface Any parser error
      */
     public function parse(): iterable;
+
+    /**
+     * Sets the content for parsing.
+     *
+     * @param string $content
+     *
+     * @return self
+     */
+    public function setContent(string $content): self;
+
+    /**
+     * Sets the rules for content parsing.
+     *
+     * @param array $rules
+     *
+     * @return self
+     */
+    public function setRules(array $rules): self;
 }
