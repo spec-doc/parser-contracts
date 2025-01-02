@@ -12,35 +12,21 @@ interface TokenInterface
     /**
      * Returns the name of the token.
      *
-     * @return string
+     * @return non-empty-string
      */
     public function name(): string;
 
     /**
-     * Returns the pattern of the token.
-     *
-     * @return string
-     */
-    public function pattern(): string;
-
-    /**
      * Returns the content of the token.
      *
-     * @return string
+     * @return non-empty-string
      */
     public function content(): string;
 
     /**
-     * Returns the position of the token relative to the main context.
+     * Returns the offset of the token.
      *
-     * @return non-negative-int
+     * @return int
      */
     public function offset(): int;
-
-    /**
-     * Returns the token processing flag
-     *
-     * @return bool
-     */
-    public function isProcessed(): bool;
 }
