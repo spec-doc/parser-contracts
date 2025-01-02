@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace SpecDoc\Contract\Parser;
 
-use SpecDoc\Contract\Common\TokenInterface;
+use SpecDoc\Contract\Token\TokenInterface;
 use SpecDoc\Contract\Exception\ParserExceptionInterface;
 
 /**
