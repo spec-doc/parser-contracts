@@ -12,14 +12,14 @@ interface TokenInterface
     /**
      * Returns the name of the token.
      *
-     * @return string
+     * @return non-empty-string
      */
     public function name(): string;
 
     /**
      * Returns the pattern of the token.
      *
-     * @return string
+     * @return non-empty-string
      */
     public function pattern(): string;
 

@@ -25,16 +25,16 @@ interface ParserInterface
      *
      * @param string $content
      *
-     * @return self
+     * @return static
      */
-    public function setContent(string $content): self;
+    public function setContent(string $content): static;
 
     /**
      * Sets the rules for content parsing.
      *
      * @param array $rules
      *
-     * @return self
+     * @return static
      */
-    public function setRules(array $rules): self;
+    public function setRules(array $rules): static;
 }
