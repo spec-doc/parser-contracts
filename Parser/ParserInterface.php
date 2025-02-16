@@ -15,26 +15,10 @@ interface ParserInterface
     /**
      * Parses the source into a list of tokens.
      *
+     * @param string $content
+     *
      * @return list<TokenInterface>
      * @throws ParserExceptionInterface Any parser error
      */
-    public function parse(): iterable;
-
-    /**
-     * Sets the content for parsing.
-     *
-     * @param string $content
-     *
-     * @return static
-     */
-    public function setContent(string $content): static;
-
-    /**
-     * Sets the rules for content parsing.
-     *
-     * @param array $rules
-     *
-     * @return static
-     */
-    public function setRules(array $rules): static;
+    public function parse(string $content): iterable;
 }
